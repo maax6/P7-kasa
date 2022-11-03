@@ -1,12 +1,38 @@
-.kasa-banner {
-    color: rgb(102, 8, 224);
-    text-align: Left;
-    padding: 32px;
-    border-bottom: solid 3px rgb(240, 1, 240);
+.banner-container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 223px;
+    /* background: $background-color url(../../assets/images/background-banner.png); */
+    /* background-color: #000000; */
+    background:  url(../assets/images/background-banner.png);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 63px;
 }
-/* .kasa-logo{
+
+.banner-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 142.6%;
+    /* color: $tertiary-color; */
+    /* background: $background-color; */
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
 
 }
-.kasa-logo2{
-
-} */
+.banner-text-container{
+display: flex;
+}
