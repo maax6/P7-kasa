@@ -1,24 +1,24 @@
 .kasa-header {
-  color: rgb(102, 8, 224);
-  text-align: Left;
-  padding: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+   color: rgb(102, 8, 224);
+   text-align: Left;
+   padding: 32px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
 }
 .navbar {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  width: 309px;
-  height: 34px;
+   display: flex;
+   align-items: flex-end;
+   justify-content: space-between;
+   width: 309px;
+   height: 34px;
 }
 .navLink {
-  color: black;
-  text-decoration: none;
-  font-size: normal;
-  font-size: 24px;
-  font-weight: 500;
-  text-align: right;
-  line-height: 34px;
+   color: black;
+   text-decoration: none;
+   font-size: normal;
+   font-size: 24px;
+   font-weight: 500;
+   text-align: right;
+   line-height: 34px;
 }
