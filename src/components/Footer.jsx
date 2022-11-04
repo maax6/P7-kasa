@@ -1,1 +1,1 @@
-import '../styles/Footer.css';
+import '../styles/Footer.css'

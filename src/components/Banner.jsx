@@ -1,5 +1,5 @@
-import React from 'react';
-import '../styles/Banner.css';
+import React from 'react'
+import '../styles/Banner.css'
 
 export default function Banner() {
    return (
@@ -8,5 +8,5 @@ export default function Banner() {
             <div className="banner-text">Chez vous, partout et ailleurs</div>
          </div>
       </div>
-   );
+   )
 }

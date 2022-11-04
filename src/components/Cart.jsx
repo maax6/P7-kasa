@@ -1,8 +1,8 @@
-import { useState } from 'react';
+import { useState } from 'react'
 
 function Cart() {
-   const monsteraPrice = 8;
-   const [cart, updateCart] = useState(0);
+   const monsteraPrice = 8
+   const [cart, updateCart] = useState(0)
 
    return (
       <div className="lmj-cart">
@@ -13,7 +13,7 @@ function Cart() {
          </div>
          <h3>Total : {monsteraPrice * cart}€</h3>
       </div>
-   );
+   )
 }
 
-export default Cart;
+export default Cart

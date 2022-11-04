@@ -1,6 +1,6 @@
-import React from 'react';
-import logo from '../assets/logo.svg';
-import '../styles/Header.css';
+import React from 'react'
+import logo from '../assets/logo.svg'
+import '../styles/Header.css'
 
 function Banner() {
    return (
@@ -16,6 +16,6 @@ function Banner() {
             </li>
          </ul>
       </div>
-   );
+   )
 }
-export default Banner;
+export default Banner
