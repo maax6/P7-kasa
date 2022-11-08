@@ -1,8 +1,8 @@
 import React from 'react'
-import logo from '../assets/logo.svg'
-import '../styles/Header.css'
+import logo from '../../assets/logo.svg'
+import '../../styles/Header.css'
 
-function Banner() {
+function Header() {
    return (
       <div className="kasa-header">
          <img src={logo} alt="Kasa" className="kasa-logo" />
@@ -18,4 +18,4 @@ function Banner() {
       </div>
    )
 }
-export default Banner
+export default Header
