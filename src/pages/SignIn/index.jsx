@@ -1,8 +1,7 @@
-function SignIn() {
+export default function SignIn() {
    return (
       <div>
-         <h1>Connexion</h1>
+         <h2>Connexion</h2>
       </div>
    )
 }
-export default SignIn

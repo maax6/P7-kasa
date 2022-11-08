@@ -6,13 +6,14 @@
    /* background: $background-color url(../../assets/images/background-banner.png); */
    /* background-color: #000000; */
    background: url(../assets/images/background-banner.png);
-   background-blend-mode: darken;
    background-repeat: no-repeat;
    background-size: cover;
    border-radius: 25px;
    align-items: center;
    justify-content: center;
    margin-top: 63px;
+   filter : brightness(55%);
+
 }
 
 .banner-text {

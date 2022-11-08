@@ -12,7 +12,7 @@ function Header() {
                <a href="/">Acceuil</a>
             </li>
             <li className="navLink">
-               <a href="/">À Propos</a>
+               <a href="/About">À Propos</a>
             </li>
          </ul>
       </div>

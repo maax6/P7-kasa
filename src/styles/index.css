@@ -4,15 +4,12 @@
 @import 'Banner.css';
 @import 'Footer.css';
 
-
 * {
    list-style: none;
 }
-/* body{
-	margin: 100px;
-	margin-top: 40px;
-	
-} */
+body{
+	margin: 2em;	
+}
 html {
    font-family: Montserrat;
 }
