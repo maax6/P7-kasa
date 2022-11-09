@@ -24,4 +24,4 @@ root.render(
       </Router>
    </React.StrictMode>
 )
-console.log("Version "+(require('react').version)+" de REACT")
+console.log('Version ' + require('react').version + ' de REACT')

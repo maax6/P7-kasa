@@ -12,8 +12,7 @@
    align-items: center;
    justify-content: center;
    margin-top: 63px;
-   filter : brightness(55%);
-
+   filter: brightness(55%);
 }
 
 .banner-text {
