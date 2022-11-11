@@ -8,11 +8,10 @@
    background: url(../assets/images/background-banner.png);
    background-repeat: no-repeat;
    background-size: cover;
-   border-radius: 25px;
+   border-radius: 15px;
    align-items: center;
    justify-content: center;
    margin-top: 63px;
-   filter: brightness(55%);
 }
 
 .banner-text {

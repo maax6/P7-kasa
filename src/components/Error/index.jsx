@@ -1,4 +1,4 @@
-function Error() {
+export default function Error() {
    return (
       <div>
          404
@@ -6,5 +6,3 @@ function Error() {
       </div>
    )
 }
-
-export default Error
