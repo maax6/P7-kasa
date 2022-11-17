@@ -1,11 +1,11 @@
 import { useParams } from 'react-router-dom'
 
-export default function Housing() {
+export default function AccomodationSheet() {
    const { id } = useParams()
 
    return (
       <div>
-         <h2> FIche {id} </h2>
+         <h2> Fiche {id} </h2>
       </div>
    )
 }

@@ -4,6 +4,8 @@
 @import 'Footer.css';
 @import 'Banner.css';
 @import 'Error.css';
+@import 'Home.css';
+@import 'Thumbnails.css';
 
 * {
    padding: 0;
