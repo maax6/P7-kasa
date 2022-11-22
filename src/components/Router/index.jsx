@@ -1,10 +1,12 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Home from './pages/Home'
-import AccommodationSheet from './pages/AccomodationSheet'
-import Header from './components/Header'
-import Error from './pages/Error'
-import About from './pages/About'
+
+import Header from '../Header'
+import Home from '../../pages/Home'
+import AccommodationSheet from '../../pages/AccomodationSheet'
+import Error from '../../pages/Error'
+import About from '../../pages/About'
+
 export default function MyRouter() {
    return (
       <Router>

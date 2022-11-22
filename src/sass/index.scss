@@ -1,13 +1,16 @@
 
 
-@import './01_base/_base.scss';
+@import '01_base/_base.scss';
 
-@import '04_components/_header.scss';
-@import '04_components/_banner.scss';
-@import '04_components/_thumbnails.scss';
-@import '04_components/_footer.scss';
+@import '02_utils/_mixins.scss';
+@import '02_utils/_variables.scss';
 
-@import '05_pages/_home.scss';
+@import '../components/Header/_header.scss';
+@import '../components/Banner/_banner.scss';
+@import '../components/Thumbnails/_thumbnails.scss';
+@import '../components/Footer/_footer.scss';
+@import '../components/DisplayProds/_displayProds.scss';
 
-@import '05_pages/_error.scss';
-@import '04_components/_displayProds.scss';
+
+@import '../pages/Home/_home.scss';
+@import '../pages/Error/_error.scss';
