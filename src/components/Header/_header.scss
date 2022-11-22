@@ -7,32 +7,4 @@
    align-items: center;
    justify-content: space-between;
 }
-.navbar {
-   display: flex;
-   gap: 80px;
-   justify-content: space-around;
-}
-.logo-container {
-   flex: 2 1 40rem;
-}
 
-.logo-container img {
-   height: 100%;
-   display: x table-cell;
-}
-
-.navLink {
-   height: 100%;
-   text-decoration: none;
-   font-size: normal;
-   font-size: 24px;
-   font-weight: 500;
-   text-align: right;
-   line-height: 34px;
-   color: #ff6060;
-}
-
-.navLink a {
-   color: #ff6060;
-   text-decoration: none;
-}

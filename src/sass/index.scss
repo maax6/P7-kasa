@@ -1,10 +1,13 @@
 
 
+@import '01_base/_reset.scss';
 @import '01_base/_base.scss';
 
 @import '02_utils/_mixins.scss';
 @import '02_utils/_variables.scss';
 
+@import '../components/Logo/_logo.scss';
+@import '../components/Navbar/_navbar.scss';
 @import '../components/Header/_header.scss';
 @import '../components/Banner/_banner.scss';
 @import '../components/Thumbnails/_thumbnails.scss';
