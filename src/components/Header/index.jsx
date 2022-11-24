@@ -3,9 +3,9 @@ import Navbar from '../Navbar'
 import Logo from '../Logo'
 export default function Header() {
    return (
-      <div className="header">
+      <header className="header">
 		<Logo />
 		<Navbar />
-      </div>
+      </header>
    )
 }

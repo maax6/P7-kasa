@@ -1,11 +1,11 @@
 export default function Navbar () {
 	return(
 		<nav className='nav'>
-			<ul className="navbar">
-				<li className="navLink">
+			<ul className="nav__bar">
+				<li className="nav__Link">
 					<a href="/">Acceuil</a>
 				</li>
-				<li className="navLink">
+				<li className="nav__Link">
 					<a href="/About">À Propos</a>
 				</li>
 			</ul>

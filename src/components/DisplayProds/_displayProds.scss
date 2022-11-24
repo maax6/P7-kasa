@@ -1,8 +1,16 @@
 .home__products {
 	display: grid;
-	grid-template-columns: repeat(3, 2fr);
-	column-gap: 40px;
-	row-gap: 20px;
+	grid-template-columns: repeat(2, 2fr);
+	gap: 40px;
 	margin-top: 40px;
- }
- 
+	padding: 40px;
+	
+}
+.articles:nth-last-child(-0n+1){
+	border:5px solid lime;
+
+}
+.articles.articles:nth-last-child(-0n+2){
+	border:5px solid red;
+
+}

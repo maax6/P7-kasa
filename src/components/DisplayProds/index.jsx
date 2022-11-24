@@ -6,7 +6,7 @@ export default function Displayproducts() {
       <section className="home__products">
          {products.map((product) => {
             return (
-               <article key={product.id}>
+               <article key={product.id} className="articles">
                   <Link to={`/products/${product.id}`}>
                      <Thumbnails image={product.cover} title={product.title} />
                   </Link>

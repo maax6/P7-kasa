@@ -1,0 +1,17 @@
+$white: #fff;
+$black: #000;
+$primary: #ff6060;
+$secondary: #f7f7f7;
+
+$smalldevices: 576px;
+$mediumdevices: 768px;
+$largedevices: 992px;
+$xlargedevices: 1200px;
+
+$breakpoints: (
+  small: 576px,
+  medium: 768px,
+  large: 992px,
+  xlarge: 1200px,
+);
+/* Screen size variables */

@@ -1,9 +1,9 @@
-import Banner from '../../components/Banner'
+import Herobanner from '../../components/Herobanner'
 import DisplayProds from '../../components/DisplayProds'
 export default function Home() {
    return (
       <div className="home">
-         <Banner />
+         <Herobanner />
          <DisplayProds />
       </div>
    )
