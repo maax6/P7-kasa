@@ -11,3 +11,4 @@ root.render(
    </React.StrictMode>
 )
 console.log('Version ' + require('react').version + ' de REACT')
+

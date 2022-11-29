@@ -1,8 +1,9 @@
-.logo-container {
-	flex: 2 1 40rem;
- }
- 
- .logo {
-	height: 100%;
-	// display: x table-cell;
+// .logo-container {
+//    flex: 2 1 40rem;
+// }
+
+@media screen and (max-width: $mediumdevices) {
+	.logo{
+		height: 43.3px;
+	}
  }

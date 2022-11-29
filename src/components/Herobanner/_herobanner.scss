@@ -1,53 +1,38 @@
-
-.herobanner{
-	background-position: center;
-	background-size: cover;
-	border-collapse: separate;
-	border-radius: 10px;
-	display: flex;
-	height: 111px;
-	align-items: center;
-	&__title {
-		-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-		animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-		color: white;
-		font-size: 24px;
-		font-weight: 500;
-		padding: 16px;
-	}
-} 
+.herobanner {
+   background-position: center;
+   background-size: cover;
+   border-collapse: separate;
+   border-radius: 10px;
+   display: flex;
+   height: 111px;
+   align-items: center;
+   &__title {
+      -webkit-animation: tracking-in-expand 0.7s
+         cubic-bezier(0.215, 0.61, 0.355, 1) both;
+      animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
+         both;
+      color: white;
+      font-size: 24px;
+      font-weight: 500;
+      padding: 16px;
+   }
+}
 
 .herobanner {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/background-banner.png");
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('../../assets/images/background-banner.png');
 }
-
 
 @media screen and (min-width: $mediumdevices) {
-	.herobanner,
-	.herobanner__about {
-		height: 223px;
-		justify-content: center;
-		&__title {
-			font-size: 48px;
-		}
-	}
+   .herobanner,
+   .herobanner__about {
+      height: 223px;
+      justify-content: center;
+      &__title {
+         font-size: 48px;
+      }
+   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // .banner-container {
 //    position: relative;
@@ -86,7 +71,6 @@
 // .banner-text-container {
 //    display: flex;
 // }
-
 
 // .banner{
 

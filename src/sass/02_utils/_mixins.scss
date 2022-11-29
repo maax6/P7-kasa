@@ -1,6 +1,18 @@
-@mixin media-query($key) {
-	$size: map-get($breakpoints, $key);
-	@media only screen and (min-width: $size) {
-	  @content;
-	}
-  }
+// @mixin media-query($key) {
+//    $size: map-get($breakpoints, $key);
+//    @media only screen and (min-width: $size) {
+//       @content;
+//    }
+// }
+@mixin min-media-query($key) {
+   $size: map-get($breakpoints, $key);
+   @media only screen and (min-width: $size) {
+      @content;
+   }
+}
+@mixin max-media-query($key) {
+   $size: map-get($breakpoints, $key);
+   @media only screen and (max-width: $size) {
+      @content;
+   }
+}
