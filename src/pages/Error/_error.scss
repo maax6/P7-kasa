@@ -6,13 +6,15 @@
    align-items: center;
    text-align: center;
    margin: 50px 0 20px 0;
+   height: 100%;
+   flex-grow: 1;
 }
 
 .big404 {
    font-family: 'Montserrat';
    font-style: normal;
    font-weight: 700;
-  font-size: 100px;
+   font-size: 100px;
    left: 0%;
    right: 0%;
    top: 0%;
@@ -21,15 +23,15 @@
    align-items: center;
    text-align: center;
    color: #ff6060;
-   @include media-query(small){
-	font-size: 150px;
-   }
-   @include media-query(medium){
-	font-size: 200px;
-   }
-   @include media-query(large){
-	font-size: 288px;
-   }
+	@include media-query(small){
+		font-size: 150px;
+	}
+	@include media-query(medium){
+		font-size: 200px;
+	}
+	@include media-query(large){
+		font-size: 288px;
+	}
 }
 h1 {
    font-weight: 500;
@@ -39,7 +41,6 @@ span {
    padding-top: 12em;
 }
 a {
-   text-decoration: underline;
    color: #ff6060;
 }
 
