@@ -11,8 +11,7 @@ export default function Footer() {
 		<footer className="footer">
 			<FooterLogo ><Logo / ></FooterLogo >
 			<p className="footer__text">
-			©
-			{effectiveYear} Kasa. All rights reserved
+			©{effectiveYear} Kasa. All rights reserved
 		</p>
 		</footer>
 	)

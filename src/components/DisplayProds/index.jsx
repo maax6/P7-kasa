@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import products from '../../products.json'
+import products from '../..//assets/templates/products.json'
 import Thumbnails from '../../components/Thumbnails'
 export default function Displayproducts() {
    return (
