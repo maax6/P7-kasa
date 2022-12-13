@@ -1,12 +1,28 @@
 .dropdown{
-display: flex;;
-flex-direction: column;
+	display: flex;;
+	flex-direction: column;
+		&__button{
+			background-color: $primary;
+			flex-direction: row;
+			height: 35px;
+			&__title{
+				color: $white;
+				
+			}
+			&__chevron{
+				position: absolute;
+				top: 20px;
+				right: 20px;
+			}
+		}
+		&__infos {
+			padding: 10px;
+			line-height: 20px;
+			background-color: $secondary;
+			border-radius: 15px;
+		}
+		&__hidden{
+			display:none;
+		}
 
-	&__infos {
-		border: 3px solid dotted chocolate;
-	}
-	&__hidden{
-		display:none;
-		height: 0px;
-	}
 }

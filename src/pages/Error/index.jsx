@@ -4,7 +4,7 @@ export default function Error() {
          <div className="errContainer">
             <div className="big404">404</div>
             <h1>Oups ! La page que vous demandez n'existe pas.</h1>
-            <span>
+            <span className="return">
                <a href="/">Retourner à la page d'acceuil</a>
             </span>
          </div>
