@@ -1,0 +1,12 @@
+.dropdown{
+display: flex;;
+flex-direction: column;
+
+	&__infos {
+		border: 3px solid dotted chocolate;
+	}
+	&__hidden{
+		display:none;
+		height: 0px;
+	}
+}

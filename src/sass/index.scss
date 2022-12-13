@@ -5,14 +5,15 @@
 @import '02_utils/_variables.scss';
 @import '02_utils/_keyframes.scss';
 
-@import '../components/Logo/_logo.scss';
-@import '../components/Navbar/_navbar.scss';
+
 @import '../components/Header/_header.scss';
 @import '../components/Herobanner/_herobanner.scss';
 @import '../components/banner/_banner.scss';
 @import '../components/Thumbnails/_thumbnails.scss';
 @import '../components/Footer/_footer.scss';
 @import '../components/DisplayProds/_displayProds.scss';
+@import '../components/Dropdown/_dropdown.scss';
 
 @import '../pages/Home/_home.scss';
 @import '../pages/Error/_error.scss';
+@import '../pages/About/_about.scss';

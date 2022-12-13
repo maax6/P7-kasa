@@ -1,21 +1,22 @@
 .banner {
 	background-position: center;
 	background-size: cover;
-	border-collapse: separate;
-	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
-	height: 111px;
 	align-items: center;
-	margin: 0 5%;
+
 	background-position: 50%;
+	&__img{
+		border-radius: 25px;
+		margin: 0 5%;
+		width: 100%;
+	}
 }
 @media screen and (min-width: $mediumdevices) {
 	.banner {
 	   height: 223px;
 	   justify-content: center;
-	   &__title {
-		  font-size: 48px;
-	   }
 	}
  }
+
+

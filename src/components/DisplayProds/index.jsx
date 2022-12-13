@@ -4,7 +4,7 @@ import Thumbnails from '../../components/Thumbnails'
 export default function Displayproducts() {
    return (
       <section className="home__products">
-         {products.map((product) => {
+		 {products.map((product) => {
             return (
                <article key={product.id} className="articles">
                   <Link to={`/products/${product.id}`}>

@@ -6,8 +6,7 @@ const img = bckImg
 export default function Banner() {
    return (
 		<div className="banner">
-			<img src={img} alt="" />
-			<div className='banner__overlay'></div>
+			<img className='banner__img' src={img} alt="" />
 		</div>
    )
 };

@@ -1,9 +1,51 @@
 .header {
-	position: relative;
+   position: relative;
    display: flex;
    align-items: center;
    align-items: flex-end;
    justify-content: space-between;
-   padding: 30px;
-
+   
+}
+.logo-container {
+	width: 100%;
+	height: auto;
+}
+.logo{
+	height: 100%;
+	width: auto;
+}
+.nav {
+	&__bar {
+		display: flex;
+		gap: 23px;;
+		justify-content: flex-end;
+		@include max-media-query(small){
+		font-size: 9px;
+	 	}
+	}
+	&__Link {
+		margin-left: 10px;
+		text-decoration: none;
+		font-size: normal;
+		font-weight: 500;
+		text-align: right;
+		line-height: 34px;
+		color: #ff6060;
+		align-items: flex-end;
+		@include min-media-query(medium) {
+			font-size: 24px;
+		}
+		@include max-media-query(small) {
+			text-transform: uppercase;
+			
+			
+		}
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	&__Link a {
+		color: #ff6060;
+		text-decoration: none;
+	}
 }
