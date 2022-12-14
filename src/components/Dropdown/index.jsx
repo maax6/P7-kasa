@@ -1,17 +1,16 @@
 import { useState, useRef, useEffect } from "react";
 import { FiChevronUp } from 'react-icons/fi';
 import { FiChevronDown } from 'react-icons/fi';
-export default function Dropdown({title, text}) {
+export default function Dropdown(props) {
 	const [isOpen, setIsOpen] = useState(false);
-	console.log(isOpen)
 	return (
-		<div className="dropdown">
-			<button className="dropdown__button" type="button" onClick={() => setIsOpen(!isOpen)} >
-				<span className="dropdown__button__title">{title}</span>
-				<div className="dropdown__button__chevron">{isOpen ? <FiChevronUp /> : <FiChevronDown /> }</div>
+		<div className="dropdown" key={props.id}>
+			<button type="button" className="dropdown__button" onClick={() => setIsOpen(!isOpen)} >
+				<h1 className="dropdown__button__title">{props.title}</h1>
+				<span className="dropdown__button__chevron">{isOpen ? <FiChevronUp /> : <FiChevronDown /> }</span>
 			</button>
 			<div className={isOpen ? 'dropdown__infos' : 'dropdown__infos dropdown__hidden'}>
-				{text}
+				{props.description}
 			</div>
 		</div>
 	)

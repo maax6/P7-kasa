@@ -1,22 +1,29 @@
 .dropdown{
-	display: flex;;
+	display: flex;
 	flex-direction: column;
 		&__button{
+			margin: 10px;
+			padding: 10px;
+			display: flex;
 			background-color: $primary;
 			flex-direction: row;
-			height: 35px;
+			align-items: center;
+			justify-content: space-between;
+			height: 60px;
 			&__title{
 				color: $white;
+				font-size: x-large;
 				
 			}
 			&__chevron{
-				position: absolute;
-				top: 20px;
-				right: 20px;
+				font-size: xx-large;
+				color: $white;
+				
 			}
 		}
 		&__infos {
 			padding: 10px;
+			color: red;
 			line-height: 20px;
 			background-color: $secondary;
 			border-radius: 15px;

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
-import data from '../../assets/templates/aboutData.js'
+import data from './slogan.js'
 import bannerHome from './home-banner.png'
 import bannerAbout from './about-banner.png'
 const slogan = data.slogan;

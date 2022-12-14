@@ -1,14 +1,12 @@
 import Dropdown from '../../components/Dropdown'
-import dataTxt from "../../assets/templates/aboutData.js"
+import kValues from "./aboutData.json"
 import Herobanner from '../../components/Herobanner'
-export default function About(props) {; 
+export default function About() {
    return (
 	<div className='about'>
-		<Herobanner />
-		 <Dropdown title="Fiabilité" text={dataTxt.fiability} />
-		 <Dropdown title="Respect" text={dataTxt.respect} />
-		 <Dropdown title="Service" text={dataTxt.service} />
-		 <Dropdown title="Sécurité" text={dataTxt.security} />
+		{kValues.map((kValue) => 
+		 <Dropdown key={kValue.id} title={kValue.title} description={kValue.description} />
+		)}
    	</div>
    )
 }
