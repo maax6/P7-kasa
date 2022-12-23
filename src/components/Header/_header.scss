@@ -1,27 +1,28 @@
 .header {
    position: relative;
    display: flex;
-   align-items: center;
    align-items: flex-end;
    justify-content: space-between;
-   padding: 20px;
-   
+   margin-top: 2rem;
 }
-.logo-container {
-	width: 100%;
-	height: auto;
-}
+
+// .logo-container {
+// 	@include max-media-query(medium){
+// 		min-width: 30%;
+// 	}
+// }
+
 .logo{
 	height: 100%;
-	width: auto;
+	width: 100%;
 }
 .nav {
 	&__bar {
 		display: flex;
-		gap: 23px;;
 		justify-content: flex-end;
-		@include max-media-query(small){
-		font-size: 9px;
+		@include min-media-query(small){
+			font-size: 14px;
+			gap: 23px;
 	 	}
 	}
 	&__Link {
@@ -38,8 +39,6 @@
 		}
 		@include max-media-query(small) {
 			text-transform: uppercase;
-			
-			
 		}
 		&:hover {
 			text-decoration: underline;

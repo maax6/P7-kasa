@@ -1,12 +1,11 @@
-import React from 'react'
+import React from 'react';
 
+function Banner({ title, imageUrl }) {
+  return (
+    <div className="banner" style={{ backgroundImage: `url(${imageUrl})`, color: 'white' }} >
+      <h1>{title}</h1>
+    </div>
+  );
+};
 
-
-
-function Banner(image) {
-   return (
-		<div className="banner">
-			<img className='banner__img' src={image} alt="" />
-		</div>
-   )
-}
+export default Banner;
