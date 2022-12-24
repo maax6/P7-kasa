@@ -3,20 +3,13 @@
 html{
    font-family: Montserrat;
 }
-.body{
-	background-color: red($color: black);
-	height: 100%;
-}
+
 .main-container{
-	max-width: 1300px;
 	display: flex;
 	flex-direction: column;
+	margin: 2% auto;
+	max-width: 1240px;
 	height: 100%;
-	margin: 40px 5%;
-	gap: 40px;
-	margin: auto;
-	
-
 }
 
 

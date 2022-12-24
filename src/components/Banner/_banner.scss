@@ -1,21 +1,18 @@
 .banner {
-	background-position: center;
-	background-size: cover;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
-	background-position: 50%;
-	&__img{
-		border-radius: 25px;
-		width: 100%;
+	margin:auto;
+	justify-content: center;
+	height: 224px;
+	border-radius: 15px;
+	filter : brightness(50%);
+	background-position: 60%;
+	font-size: 24px;
+	@include max-media-query(medium) {
+		height: 111px;
 	}
+	&__text{
+			color: $white;
+		}
 }
-@media screen and (min-width: $mediumdevices) {
-	.banner {
-	   height: 223px;
-	   justify-content: center;
-	}
- }
-
-

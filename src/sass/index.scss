@@ -1,9 +1,9 @@
 @import '01_base/_reset.scss';
 @import '01_base/_base.scss';
 
+@import '02_utils/_keyframes.scss';
 @import '02_utils/_mixins.scss';
 @import '02_utils/_variables.scss';
-@import '02_utils/_keyframes.scss';
 
 
 @import '../components/Header/_header.scss';
