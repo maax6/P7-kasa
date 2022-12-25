@@ -1,14 +1,24 @@
 .header {
 	display: flex;
-	margin: 20px;
-	align-items: flex-end;
+	flex-direction: row;
 	justify-content: space-between;
+	align-items: center;
+	height: 47px;
 	font-size: 12px;
-	text-transform: uppercase;
+	@include media-query(medium){
+		height: 68px;
+		font-size: 24px;
+	}
 }
 
 .logo{
-	height: 43.03px;
+	height: 100%;
+	&__container{
+		height: 100%;
+		@include media-query(medium){
+			height: 78px
+		}
+	}
 }
 .nav {
 	&__bar {
@@ -17,7 +27,6 @@
 	}
 	&__Link {
 		margin-left: 10px;
-		text-decoration: none;
 		font-weight: 500;
 		text-align: right;
 		line-height: 34px;
@@ -26,8 +35,11 @@
 			&:hover {
 				text-decoration: underline;
 			}
-	}
-	&__Link a {
+			@include max-media-query(medium) {
+				text-transform: uppercase;
+			}
+		}
+	a {
 		text-decoration: none;
 	}
 	

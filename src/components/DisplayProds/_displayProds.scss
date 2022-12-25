@@ -1,8 +1,8 @@
 .home__products {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
-   gap: 40px;
-   padding: 40px;
+   row-gap:40px;
+   column-gap: 50px;
    background-color: $secondary;
    border-radius: 25px;
 }
@@ -16,8 +16,6 @@
 	.home__products {
 		display: flex;
 		flex-direction: column;
-		// padding: 0 0 40px 0;
-		//   gap: 40px;
 		min-height: 100%;
 		position:relative;
 

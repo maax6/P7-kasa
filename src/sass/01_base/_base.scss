@@ -6,8 +6,9 @@ html{
 
 .main-container{
 	display: flex;
+	margin: 10px auto;
+	padding: 0 5%;
 	flex-direction: column;
-	margin: 2% auto;
 	max-width: 1240px;
 	height: 100%;
 }

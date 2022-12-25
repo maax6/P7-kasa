@@ -1,15 +1,16 @@
 .banner {
 	position: relative;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	display: flex; flex-direction: column; align-items: center; justify-content: center;
 	height: 111px;
-	justify-content: center;
 	border-radius: 10px;
-	margin: 0 5%;
-	// filter : brightness(50%);
 	background-position: 60%;
 	font-size: 24px;
+	margin: 20px auto;
+	&:after{
+		position: absolute;
+		top: 0; left: 0;
+		filter : brightness(50%);
+	}
 	&__text {
 		position: absolute;
 		color: $white;
