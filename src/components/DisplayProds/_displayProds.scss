@@ -12,7 +12,7 @@
 .articles.articles:nth-last-child(-0n + 2) {
 	border: 5px solid red;
 }
-@media screen and (max-width: $mediumdevices) {
+@include max-media-query(medium) {
 	.home__products {
 		display: flex;
 		flex-direction: column;

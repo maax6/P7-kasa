@@ -1,18 +1,26 @@
 .banner {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin:auto;
+	height: 111px;
 	justify-content: center;
-	height: 224px;
-	border-radius: 15px;
-	filter : brightness(50%);
+	border-radius: 10px;
+	margin: 0 5%;
+	// filter : brightness(50%);
 	background-position: 60%;
 	font-size: 24px;
-	@include max-media-query(medium) {
-		height: 111px;
+	&__text {
+		position: absolute;
+		color: $white;
+		padding: 32px 110px 31px 16px;
+		align-items: flex-end;
+			@include media-query(small) {
+				padding:10px
+			}
 	}
-	&__text{
-			color: $white;
+		@include media-query(medium) {
+			height: 180px;
+			border-radius: 25px;
 		}
 }
