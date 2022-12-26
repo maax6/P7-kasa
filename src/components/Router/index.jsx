@@ -14,6 +14,7 @@ export default function MyRouter() {
 					<Route exact path="/" element={<Home />} />
 					<Route path="/Products/:id" element={<Card />} />
 					<Route path="/About" element={<About />} />
+					<Route path="/404" element={<Error />} />
 					<Route path="/*" element={<Error />} />
 				</Routes>
       </Router>
