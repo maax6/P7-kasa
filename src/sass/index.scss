@@ -1,18 +1,19 @@
+//Sass base
 @import '01_base/_reset.scss';
 @import '01_base/_base.scss';
-
+//Scss Variables
 @import '02_utils/_keyframes.scss';
 @import '02_utils/_mixins.scss';
 @import '02_utils/_variables.scss';
-
-
+//Components
 @import '../components/Header/_header.scss';
 @import '../components/Banner/_banner.scss';
 @import '../components/Thumbnails/_thumbnails.scss';
-@import '../components/Footer/_footer.scss';
 @import '../components/DisplayProds/_displayProds.scss';
+@import '../components/Footer/_footer.scss';
 @import '../components/Dropdown/_dropdown.scss';
-
+//Views
 @import '../pages/Home/_home.scss';
-@import '../pages/Error/_error.scss';
+@import '../pages/Card/_card.scss';
 @import '../pages/About/_about.scss';
+@import '../pages/Error/_error.scss';

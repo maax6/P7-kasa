@@ -1,35 +1,37 @@
 .footer {
-	position: absolute;
 	background: $black;
-	height: 209px;
-	width: 100%;
-	bottom: 0;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
-    text-align: center;
-  
-	@include media-query(medium) {
-	  justify-content: end;
+	padding-top: 21px;
+	padding-bottom: 21px;
+	justify-content: space-evenly;
+	height: 209px;
+	width: 100%;
+	color: $white;
+	
+	@include media-query(small) {
+	  
 	}
-  
-	&__text {
-	  color: $white;
-	  font-weight: 500;
-	  font-size: 12px;
-	  margin-top: 20px;
-	  margin-bottom: 15px;
-	  @include media-query(small) {
-		font-size: 16px;
-		}
-	@include media-query(medium) {
-		font-size: 20px;
-		margin-top: 40px;
-		margin-bottom: 30px;
-		}
-	  @include media-query(large) {
-		font-size: 24px;
-		}
+	&__logo{
+	filter: brightness(10);
+	height: 40px;
+
 	}
-  }
+	// &__text {
+	//   font-size: 12px;
+	//   margin-top: 20px;
+	//   margin-bottom: 15px;
+	//   @include media-query(small) {
+	// 	font-size: 16px;
+	// 	}
+	// @include media-query(medium) {
+	// 	font-size: 20px;
+	// 	margin-top: 40px;
+	// 	margin-bottom: 30px;
+	// 	}
+	//   @include media-query(large) {
+	// 	font-size: 24px;
+	// 	}
+	// }
+}

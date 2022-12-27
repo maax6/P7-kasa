@@ -1,28 +1,29 @@
 .banner {
-	position: relative;
+
 	display: flex; flex-direction: column; align-items: center; justify-content: center;
 	height: 111px;
 	border-radius: 10px;
 	background-position: 60%;
 	font-size: 24px;
-	margin: 20px auto;
+	background-size: cover;
 	width: 100%;
-	&:after{
-		position: absolute;
-		top: 0; left: 0;
-		filter : brightness(50%);
-	}
+		@include media-query(small) {
+				border-radius: 18px;
+			}
+		@include media-query(medium) {
+				height: 180px;
+				border-radius: 25px;
+			}
+		@include media-query(large) {
+				font-size: 32px;
+			}
 	&__text {
-		position: absolute;
 		color: $white;
-		padding: 32px 110px 31px 16px;
-		align-items: flex-end;
+		padding: 16px 100px 31px 16px;
 			@include media-query(small) {
-				padding:10px
+				padding:10px;
 			}
 	}
-		@include media-query(medium) {
-			height: 180px;
-			border-radius: 25px;
-		}
 }
+
+
