@@ -18,7 +18,7 @@ export default function Card() {
 	return (
 		<div className='card'>
 			<h1>{selectedItem.title} </h1>
-			<div className='tags'>
+			<div className='card__tags'>
 				{selectedItem.tags.map((tag, index) => (
 					<Tags key={index} getTag={tag} />
 					))}
