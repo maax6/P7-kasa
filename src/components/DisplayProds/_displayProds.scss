@@ -1,6 +1,7 @@
 .home__products {
 	display: flex;
 	flex-direction: column;
+	flex-grow: 1;
 	row-gap:40px;
 	column-gap: 50px;
 	background-color: $secondary;
