@@ -1,6 +1,15 @@
-.tags{
+.tag{
+	height: 28px;
+	width: 111px;
+	background-color: $primary;
+	border-radius: 5px;
 	display: flex;
-	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 	&__text{
+		font-size: 10px;
+		color: white;
+		margin: 0 5px;
+		padding: 4px;
 	}
-}
+}	

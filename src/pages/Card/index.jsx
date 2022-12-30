@@ -17,10 +17,11 @@ export default function Card() {
 	//englobe all tags in a
 	return (
 		<div className='card'>
-			<h1>{selectedItem.title} </h1>
+			<h1 className='card__title'>{selectedItem.title} </h1>
+			<h2 className='card__location'>{selectedItem.location}</h2>
 			<div className='card__tags'>
-				{selectedItem.tags.map((tag, index) => (
-					<Tags key={index} getTag={tag} />
+				{selectedItem.tags.map((tag) => (
+					<Tags getTag={tag} />
 					))}
 			</div>
 		</div>

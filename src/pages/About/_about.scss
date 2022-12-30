@@ -1,6 +1,10 @@
 .about{
+	margin: 0 5%;
 	display: flex;
-	flex-grow: 1;
+	flex-grow: 1; 
 	flex-direction: column;
 	row-gap: 15px;
+}
+.dropdowns{
+	margin: 0 5%;
 }

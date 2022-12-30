@@ -6,9 +6,11 @@ import image from "./about-banner.png"
    return (
 	<div className='about'>
 		<Banner title="" imageUrl={image} />
-		{kValues.map((kValue) =>
-		<Dropdown key={kValue.id} title={kValue.title} description={kValue.description} />
-		)}
+		<div className='dropdowns'>
+			{kValues.map((kValue) =>
+			<Dropdown key={kValue.id} title={kValue.title} description={kValue.description} />
+			)}
+		</div>
 	</div>
    )
 }
