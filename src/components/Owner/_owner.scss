@@ -1,0 +1,14 @@
+.owner{
+	display: flex;
+	flex-direction: row;
+	gap:10px;
+	justify-content: flex-end;
+	&__name{
+		font-size: 12px;
+	}
+	&__picture{
+		height:32px;
+		width:32px;
+		border-radius: 100px;
+	}
+}
