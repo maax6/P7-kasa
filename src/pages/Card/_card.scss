@@ -5,6 +5,14 @@
 	flex-grow: 1;
 	flex-direction: column;
 	gap: 15px;
+	&__title{
+		font-weight: 600;
+		font-size: 18px;
+	}
+	&__location{
+		font-weight: 400;
+		font-size: 14px;
+	}
 	&__tags{
 		color:rgb(0, 0, 0);
 		display: flex;
