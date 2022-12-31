@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom'
 import products from '../../assets/templates/products.json';
 import Error from '../Error'
+import Rating from '../../components/Rating' 
 import Owner from '../../components/Owner' 
 import Tags from '../../components/Tags'
 //import rating from '../../components/Rating'
@@ -26,8 +27,10 @@ export default function Card() {
 					<Tags key={index} getTag={tag} />
 					))}
 			</div>
-				{/**{selectedItem.rating} */}
-			<Owner host={selectedItem.host} />
+			<div className="provider">
+				<Rating score={selectedItem.rating} />
+				<Owner host={selectedItem.host} />
+			</div>
 		</div>
 	)
 }
