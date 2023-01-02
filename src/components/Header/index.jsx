@@ -1,21 +1,29 @@
 import React from 'react'
 import logo from '../../assets/logo.svg'
+import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
 export default function Header() {
-	const pathname = window.location.pathname;
-  	return (
+	const location = useLocation();
+	const [activePage, setActivePage] = useState(location.pathname);
+
+	useEffect(() => {
+		setActivePage(location.pathname);
+	 }, [location]);
+	return (
 	<header className="header">
 		<div className="logo__container">
 			<img src={logo} alt="Kasa" className="logo" />
 		</div>
 		<nav className="nav">
         	<ul className="nav__bar">
-            	<li className={pathname === '/' ? 'active nav__link' : 'nav__link'} >
+            	<li className={activePage === '/' ? 'active nav__link' : 'nav__link'} >
                		<a href="/">Acceuil</a>
             	</li>
-            	<li className={pathname === '/About' ? 'active nav__link' : 'nav__link'}>
+            	<li className={activePage === '/About' ? 'active nav__link' : 'nav__link'}>
                		<a href="/About">À Propos</a>
             	</li>
-         	</ul>
+         </ul>
       	</nav>
     </header>
    )

@@ -3,7 +3,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: flex-en;
+	align-items: flex-end;
 	height: 43px;
 	font-size: 12px;
 	@include media-query(medium){

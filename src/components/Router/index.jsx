@@ -1,15 +1,17 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-
+import Header from '../Header'
+import Footer from '../Footer'
 import Home from '../../pages/Home'
 import Error from '../../pages/Error'
 import Card from '../../pages/Card'
 import About from '../../pages/About'
-
-export default function MyRouter() {
+ function MyRouter() {
    return (
+		<>
 	   <Router>
+			<Header />
 				<Routes>
 					<Route exact path="/" element={<Home />} />
 					<Route path="/Products/:id" element={<Card />} />
@@ -17,6 +19,9 @@ export default function MyRouter() {
 					<Route path="/404" element={<Error />} />
 					<Route path="/*" element={<Error />} />
 				</Routes>
+			<Footer />
       </Router>
-   )
+		</>
+	)
 }
+export default MyRouter;
