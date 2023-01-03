@@ -37,9 +37,9 @@
 		@include max-media-query(medium) {
 			text-transform: uppercase;
 		}
-	}
-	.active a {
-		text-decoration: underline;
+		&--active {
+			text-decoration: underline;
+		}
 	}
 	
 }
