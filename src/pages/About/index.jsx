@@ -1,5 +1,5 @@
 import Dropdown from '../../components/Dropdown'
-import kValues from "./aboutData.json"
+import kasaValues from "./aboutData.json"
 import Banner from '../../components/Banner'
 import image from "./about-banner.png"
  function About() {
@@ -7,8 +7,8 @@ import image from "./about-banner.png"
 	<div className='about'>
 		<Banner title="" imageUrl={image} />
 		<div className='dropdowns'>
-			{kValues.map((kValue) =>
-			<Dropdown key={kValue.id} title={kValue.title} description={kValue.description} />
+			{kasaValues.map((kasaValue) =>
+			<Dropdown key={kasaValue.id} title={kasaValue.title} description={kasaValue.description} />
 			)}
 		</div>
 	</div>

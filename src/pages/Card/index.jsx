@@ -3,6 +3,7 @@ import products from '../../assets/templates/products.json';
 import Error from '../Error'
 import Rating from '../../components/Rating' 
 import Owner from '../../components/Owner' 
+import Dropdown from '../../components/Dropdown'
 import Tags from '../../components/Tags'
 //import rating from '../../components/Rating'
 export default function Card() {
@@ -11,6 +12,7 @@ export default function Card() {
 	const {id}  = useParams()
 	const parsedList = JSON.parse(list)
 	const selectedItem = parsedList.find(item => item.id === id) 
+	console.log(selectedItem.equipments)
 
 	//console.log(selectedItem)
 	//console.log(parsedList)
@@ -31,6 +33,8 @@ export default function Card() {
 				<Rating score={selectedItem.rating} />
 				<Owner host={selectedItem.host} />
 			</div>
+			<Dropdown  key={selectedItem.id} title="Description" description={selectedItem.description} />
+			<Dropdown  key={selectedItem.id} title="Équiments" description={selectedItem.equipments} />
 		</div>
 	)
 }
@@ -39,6 +43,5 @@ export default function Card() {
 //console.log(selectedItem.id)
 //console.log(selectedItem.rating)
 //console.log(selectedItem.tags)
-//console.log(selectedItem.equipments)
 //console.log(selectedItem.description)
 //console.log(selectedItem.pictures)
