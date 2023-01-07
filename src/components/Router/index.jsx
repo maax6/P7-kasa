@@ -14,6 +14,7 @@ import About from '../../pages/About'
 			<Header />
 				<Routes>
 					<Route  exact path="/" element={<Home />} />
+					<Route  exact path="/P7-kasa" element={<Home />} />
 					 {/* <Route path="{{ maax6.github.io/p7-kasa}}" element={<Home />} /> */}
 					<Route path="/Products/:id" element={<Card />} />
 					<Route path="/About" element={<About />} />

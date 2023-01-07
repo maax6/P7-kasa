@@ -40,7 +40,7 @@ export default function Card() {
 				<Owner host={selectedItem.host} />
 			</div>
 			<Dropdown key={selectedItem.id} title="Description" description={selectedItem.description} />
-			<Dropdown   title="Équiments" description={selectedItem.equipments} />
+			<Dropdown   title="Équiments" equipments={selectedItem.equipments} />
 		</div>
 	)
 }
