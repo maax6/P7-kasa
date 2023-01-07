@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-function Carousel({ pictures }) {
+export default function Carousel({ pictures }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -23,12 +23,10 @@ function Carousel({ pictures }) {
       <button className="carousel__arrow carousel__arrow--prev" onClick={goToPrev}>
         &lt;
       </button>
-      <img src={pictures[currentIndex]} alt="Photo" />
+      <img src={pictures[currentIndex]} alt={"photo"+(currentIndex)} />
       <button className="carousel__arrow carousel__arrow--next" onClick={goToNext}>
         &gt;
       </button>
     </div>
   );
 }
-
-export default Carousel;
