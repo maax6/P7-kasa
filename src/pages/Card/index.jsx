@@ -12,18 +12,16 @@ export default function Card() {
 	const {id}  = useParams()
 	const parsedList = JSON.parse(list)
 	const selectedItem = parsedList.find(item => item.id === id)
+	
+	if (!selectedItem) {
+		return <Error />
+		// console.log("lol")
+	}
 	const pictures = selectedItem.pictures;
 	
 	console.log(selectedItem.equipments)
 	
-	//console.log(selectedItem)
-	//console.log(parsedList)
-	
-	if(!selectedItem){
-		return <Error />
-	}
 
-	console.log(selectedItem.pictures)
 	
 	return (
 		<div className='card'>
