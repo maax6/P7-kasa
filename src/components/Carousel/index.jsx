@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import { FiChevronRight } from 'react-icons/fi';
+import { FiChevronLeft } from 'react-icons/fi';
 
 export default function Carousel({ pictures }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -21,11 +23,11 @@ export default function Carousel({ pictures }) {
   return (
     <div className="carousel">
       <button className="carousel__arrow carousel__arrow--prev" onClick={goToPrev}>
-        &lt;
+      <FiChevronLeft />
       </button>
       <img src={pictures[currentIndex]} alt={"photo"+(currentIndex)} />
       <button className="carousel__arrow carousel__arrow--next" onClick={goToNext}>
-        &gt;
+      <FiChevronRight />
       </button>
     </div>
   );

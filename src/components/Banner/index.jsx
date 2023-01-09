@@ -1,11 +1,12 @@
 import React from 'react';
 
-function Banner({ title, imageUrl }) {
+function Banner({ title, imageUrl, height }) {
   return (
     <div className="banner" 
-		 style={{
-		 backgroundImage: `linear-gradient(5deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7)),url(${imageUrl})`
-		 }}>
+		  style={{
+        backgroundImage: `linear-gradient(5deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7)),url(${imageUrl})`,
+        height: height
+		  }}>
       <h1 className="banner__text">{title}</h1>
     </div>
   );

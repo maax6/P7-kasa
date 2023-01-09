@@ -8,3 +8,14 @@
 .dropdowns{
 	margin: 0 5%;
 }
+.banner{
+	
+	@include media-query(small) {
+	}
+
+	@include media-query(medium) {
+	}
+
+	@include media-query(large) {
+	}
+}
