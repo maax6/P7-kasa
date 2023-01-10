@@ -3,7 +3,7 @@ import { FiChevronUp } from 'react-icons/fi';
 import { FiChevronDown } from 'react-icons/fi';
 
 export default function Dropdown(props) {
-	const [isOpen, setIsOpen] = useState(true);
+	const [isOpen, setIsOpen] = useState(false);
 
 	return (
 		<div className="dropdown" key={props.id}>

@@ -6,23 +6,16 @@ import Owner from '../../components/Owner'
 import Dropdown from '../../components/Dropdown'
 import Tags from '../../components/Tags'
 import Carousel from '../../components/Carousel'
-//import rating from '../../components/Rating'
 export default function Card() {
 	const list = JSON.stringify(products)
 	const {id}  = useParams()
 	const parsedList = JSON.parse(list)
 	const selectedItem = parsedList.find(item => item.id === id)
-	
+
 	if (!selectedItem) {
 		return <Error />
-		// console.log("lol")
 	}
 	const pictures = selectedItem.pictures;
-	
-	console.log(selectedItem.equipments)
-	
-
-	
 	return (
 		<div className='card'>
 			<Carousel pictures={pictures} />
@@ -42,9 +35,3 @@ export default function Card() {
 		</div>
 	)
 }
-
-
-//console.log(selectedItem.id)
-//console.log(selectedItem.rating)
-//console.log(selectedItem.tags)
-//console.log(selectedItem.description)
