@@ -1,17 +1,38 @@
 .card{
-	margin: 0 5%;
+
+	max-width: 1440px;
+	margin:  0 5%;
 	color: $primary;
 	display: flex;
-	flex-grow: 1;
 	flex-direction: column;
+	flex-grow: 1;
 	gap: 15px;
 	&__title{
-		font-weight: 600;
+		font-weight: 500;
 		font-size: 18px;
+		line-height:25px;
+		@include media-query(small) {
+			font-size: 22px;
+			line-height:25px;
+		}
+		@include media-query(medium) {
+			font-size: 28px;
+			line-height:45px;
+		}
+		@include media-query(large) {
+			font-size: 36px;
+			line-height:51px;
+		}
 	}
 	&__location{
 		font-weight: 400;
 		font-size: 14px;
+		@include media-query(small) {
+			font-size: 16px;
+		}
+		@include media-query(medium) {
+			font-size: 18px;
+		}
 	}
 	&__tags{
 		color:rgb(0, 0, 0);

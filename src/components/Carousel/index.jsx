@@ -22,13 +22,17 @@ export default function Carousel({ pictures }) {
 
   return (
     <div className="carousel">
-      <button className="carousel__arrow carousel__arrow--prev" onClick={goToPrev}>
-      	<FiChevronLeft />
-      </button>
+      {pictures.length > 1 && (
+        <>
+          <button className="carousel__arrow carousel__arrow--prev" onClick={goToPrev}>
+            <FiChevronLeft />
+          </button>
+          <button className="carousel__arrow carousel__arrow--next" onClick={goToNext}>
+            <FiChevronRight />
+          </button>
+        </>
+      )}
       <img src={pictures[currentIndex]} alt={"photo"+(currentIndex)} />
-      <button className="carousel__arrow carousel__arrow--next" onClick={goToNext}>
-      	<FiChevronRight />
-      </button>
     </div>
   );
 }
