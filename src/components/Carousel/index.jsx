@@ -8,7 +8,7 @@ export default function Carousel({ pictures }) {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((currentIndex + 1) % pictures.length);
-    }, 3000);
+    }, 10000);
     return () => clearInterval(interval);
   }, [currentIndex, pictures]);
 
@@ -23,11 +23,11 @@ export default function Carousel({ pictures }) {
   return (
     <div className="carousel">
       <button className="carousel__arrow carousel__arrow--prev" onClick={goToPrev}>
-      <FiChevronLeft />
+      	<FiChevronLeft />
       </button>
       <img src={pictures[currentIndex]} alt={"photo"+(currentIndex)} />
       <button className="carousel__arrow carousel__arrow--next" onClick={goToNext}>
-      <FiChevronRight />
+      	<FiChevronRight />
       </button>
     </div>
   );

@@ -4,33 +4,67 @@
 	height: 300px;
 	overflow: hidden;
 	border-radius: 10px;
+		@include media-query(small) {
+			border-radius: 18px;
+		}
+		@include media-query(medium) {
+			height: 415px;
+			border-radius: 25px;
+		}
+		// @include media-query(large) {
+		// }
 	img {
 	  width: 100%;
 	  height: 100%;
 	  object-fit: cover;
 	}
- 
 	.carousel__arrow {
-	  position: absolute;
-	  top: 50%;
-	  font-weight:bold;
-	  transform: translateY(-50%);
-	  font-size: 2em;
-	  color: white;
-	  background: transparent;
-	  border: none;
-	  cursor: pointer;
- 
-	  &:hover {
-		 color: #ccc;
-	  }
- 
-	  &--prev {
-		 left: 10px;
-	  }
- 
-	  &--next {
-		 right: 10px;
-	  }
+		font-size: 2em;
+		position: absolute;
+		top: 50%;
+		font-weight:bold;
+		transform: translateY(-50%);
+		color: white;
+		background: transparent;
+		border: none;
+		cursor: pointer;
+			@include media-query(small) {
+				border-radius: 18px;
+				font-size:4em;
+			}
+			@include media-query(medium) {
+				border-radius: 25px;
+				font-size: 5em;
+			}
+			@include media-query(large) {
+				font-size: 8em;
+			}
+		&:hover {
+			color: #ccc;
+		}
+		&--prev {
+			left: -5px;
+				@include media-query(small) {
+					left: -10px;
+				}
+				@include media-query(medium) {
+					left: -15px;
+				}
+				@include media-query(large) {				
+					left: -25px;
+				}
+		}
+		&--next {
+			right: -5px;
+				@include media-query(small) {
+					right: -10px;
+				}
+				@include media-query(medium) {
+					right: -15px;
+				}
+				@include media-query(large) {				
+					right: -25px;
+				}
+		}
 	}
  }
