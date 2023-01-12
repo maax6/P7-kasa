@@ -1,6 +1,6 @@
-import Dropdown from '../../components/Dropdown'
+import Dropdown from '../../components/Dropdown/Dropdown'
 import kasaValues from "./aboutData.json"
-import Banner from '../../components/Banner'
+import Banner from '../../components/Banner/Banner'
 import image from "./about-banner.png"
 import imageSmall from "./about-banner-small.png"
  function About() {

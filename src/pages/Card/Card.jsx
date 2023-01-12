@@ -1,11 +1,11 @@
 import { useParams } from 'react-router-dom'
 import products from '../../assets/templates/products.json';
-import Error from '../Error'
-import Rating from '../../components/Rating' 
-import Owner from '../../components/Owner' 
-import Dropdown from '../../components/Dropdown'
-import Tags from '../../components/Tags'
-import Carousel from '../../components/Carousel'
+import Error from '../Error/Error'
+import Rating from '../../components/Rating/Rating' 
+import Owner from '../../components/Owner/Owner' 
+import Dropdown from '../../components/Dropdown/Dropdown'
+import Tags from '../../components/Tags/Tags'
+import Carousel from '../../components/Carousel/Carousel'
 export default function Card() {
 	const list = JSON.stringify(products)
 	const {id}  = useParams()

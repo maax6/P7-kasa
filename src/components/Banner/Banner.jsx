@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Banner({ title, imageUrl, height }) {
+export default function Banner({ title, imageUrl, height }) {
   return (
     <div className="banner" 
 		  style={{
@@ -11,5 +11,3 @@ function Banner({ title, imageUrl, height }) {
     </div>
   );
 };
-
-export default Banner;

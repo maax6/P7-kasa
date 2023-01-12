@@ -1,6 +1,6 @@
 import emptyStar from "./emptyStar.svg";
 import fullStar from "./fullStar.svg";
-// le score passé en props indique le nombre d'étoiles
+
 export default function Rating({ score }) {
 	const stars = [1, 2, 3, 4, 5];
 	return (
