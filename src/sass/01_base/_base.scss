@@ -4,12 +4,11 @@ html{
    font-family: Montserrat;
 }
 
-.main-container{
+#root{
+	max-width: 1440px;
 	margin: auto;
 	display: flex;
 	flex-direction: column;
-	min-width:304px ;
-	min-height: 100vh;
 }
 
 
