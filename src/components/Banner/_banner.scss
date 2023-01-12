@@ -1,29 +1,30 @@
 .banner {
-	display: flex; flex-direction: column; align-items: center; justify-content: center;
-	height: 111px;
-	border-radius: 10px;
-	background-position: 60%;
-	object-position: 0px 0px;
-	font-size: 24px;
-	background-size: cover;
-	width: 100%;
-		@include media-query(small) {
-				border-radius: 18px;
-			}
-		@include media-query(medium) {
-				height: 180px;
-				border-radius: 25px;
-			}
-		@include media-query(large) {
-				font-size: 32px;
-			}
-	&__text {
-		color: $white;
-		padding: 16px 100px 31px 16px;
-			@include media-query(small) {
-				padding:10px;
-			}
-	}
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 111px;
+   border-radius: 10px;
+   background-position: 60%;
+   object-position: 0px 0px;
+   font-size: 24px;
+   background-size: cover;
+   width: 100%;
+   @include media-query(small) {
+      border-radius: 18px;
+   }
+   @include media-query(medium) {
+      height: 180px;
+      border-radius: 25px;
+   }
+   @include media-query(large) {
+      font-size: 32px;
+   }
+   &__text {
+      color: $white;
+      padding: 16px 100px 31px 16px;
+      @include media-query(small) {
+         padding: 10px;
+      }
+   }
 }
-
-

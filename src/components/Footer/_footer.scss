@@ -1,37 +1,35 @@
 .footer {
-	background: $black;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding-top: 21px;
-	padding-bottom: 21px;
-	justify-content: space-evenly;
-	height: 209px;
-	width: 100%;
-	color: $white;
-	
-	@include media-query(small) {
-	  
-	}
-	&__logo{
-	filter: brightness(10);
-	height: 40px;
+   background: $black;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-top: 21px;
+   padding-bottom: 21px;
+   justify-content: space-evenly;
+   height: 209px;
+   width: 100%;
+   color: $white;
 
-	}
-	// &__text {
-	//   font-size: 12px;
-	//   margin-top: 20px;
-	//   margin-bottom: 15px;
-	//   @include media-query(small) {
-	// 	font-size: 16px;
-	// 	}
-	// @include media-query(medium) {
-	// 	font-size: 20px;
-	// 	margin-top: 40px;
-	// 	margin-bottom: 30px;
-	// 	}
-	//   @include media-query(large) {
-	// 	font-size: 24px;
-	// 	}
-	// }
+   @include media-query(small) {
+   }
+   &__logo {
+      filter: brightness(10);
+      height: 40px;
+   }
+   // &__text {
+   //   font-size: 12px;
+   //   margin-top: 20px;
+   //   margin-bottom: 15px;
+   //   @include media-query(small) {
+   // 	font-size: 16px;
+   // 	}
+   // @include media-query(medium) {
+   // 	font-size: 20px;
+   // 	margin-top: 40px;
+   // 	margin-bottom: 30px;
+   // 	}
+   //   @include media-query(large) {
+   // 	font-size: 24px;
+   // 	}
+   // }
 }

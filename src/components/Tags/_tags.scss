@@ -1,21 +1,21 @@
-.tag{
-	height: 28px;
-	width: fit-content;
-	background-color: $primary;
-	border-radius: 5px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	&__text{
-		font-size: 10px;
-		color: white;
-		margin: 0 5px;
-		padding: 4px;
-		@include media-query(small) {
-			font-size: 12px;
-		}
-		@include media-query(medium) {
-			font-size: 14px;
-		}
-	}
+.tag {
+   height: 28px;
+   width: fit-content;
+   background-color: $primary;
+   border-radius: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   &__text {
+      font-size: 10px;
+      color: white;
+      margin: 0 5px;
+      padding: 4px;
+      @include media-query(small) {
+         font-size: 12px;
+      }
+      @include media-query(medium) {
+         font-size: 14px;
+      }
+   }
 }

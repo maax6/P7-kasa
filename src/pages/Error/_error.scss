@@ -23,15 +23,15 @@
    align-items: center;
    text-align: center;
    color: #ff6060;
-	@include media-query(small){
-		font-size: 150px;
-	}
-	@include media-query(medium){
-		font-size: 200px;
-	}
-	@include media-query(large){
-		font-size: 288px;
-	}
+   @include media-query(small) {
+      font-size: 150px;
+   }
+   @include media-query(medium) {
+      font-size: 200px;
+   }
+   @include media-query(large) {
+      font-size: 288px;
+   }
 }
 h1 {
    font-weight: 500;
