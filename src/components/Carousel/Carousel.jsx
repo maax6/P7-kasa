@@ -30,6 +30,9 @@ export default function Carousel({ pictures }) {
                >
                   <FiChevronLeft />
                </button>
+               <span className='carousel__index'>
+                  {currentIndex + 1}/{pictures.length}
+               </span>
                <button
                   className="carousel__arrow carousel__arrow--next"
                   onClick={goToNext}

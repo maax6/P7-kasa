@@ -8,9 +8,11 @@
    align-items: center;
    @include media-query(medium) {
       height: 20px;
+	  border-radius: 8px;
    }
    @include media-query(large) {
-      height: 25px;
+      height: 27px;
+	  border-radius: 10px;
    }
    &__text {
       font-size: 10px;
