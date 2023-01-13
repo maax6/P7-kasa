@@ -1,26 +1,29 @@
 .header {
-   margin: 40px 5%;
+   margin: 20px 5%;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
    align-items: flex-end;
-   height: 43px;
+   height: 47px;
    font-size: 12px;
    @include media-query(small) {
       height: 54px;
       font-size: 18px;
+      margin: 25px 5%;
    }
    @include media-query(medium) {
       height: 68px;
       font-size: 24px;
+      margin: 35px 5%;
+   }
+   @include media-query(large) {
+      margin: 40px 5%;
    }
 }
 .logo {
    height: 100%;
    &__container {
       height: 100%;
-      @include media-query(medium) {
-      }
    }
 }
 .nav {
@@ -37,7 +40,7 @@
       line-height: 34px;
       color: #ff6060;
       align-items: flex-end;
-      @include max-media-query(medium) {
+      @include max-media-query(small) {
          text-transform: uppercase;
       }
       &--active {

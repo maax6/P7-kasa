@@ -9,27 +9,25 @@
    height: 209px;
    width: 100%;
    color: $white;
-
-   @include media-query(small) {
-   }
+   margin-top: 100px;
    &__logo {
       filter: brightness(10);
       height: 40px;
    }
-   // &__text {
-   //   font-size: 12px;
-   //   margin-top: 20px;
-   //   margin-bottom: 15px;
-   //   @include media-query(small) {
-   // 	font-size: 16px;
-   // 	}
-   // @include media-query(medium) {
-   // 	font-size: 20px;
-   // 	margin-top: 40px;
-   // 	margin-bottom: 30px;
-   // 	}
-   //   @include media-query(large) {
-   // 	font-size: 24px;
-   // 	}
-   // }
+   &__text {
+      font-size: 12px;
+      margin-top: 20px;
+      margin-bottom: 15px;
+      @include media-query(small) {
+         font-size: 16px;
+      }
+      @include media-query(medium) {
+         font-size: 20px;
+         margin-top: 40px;
+         margin-bottom: 30px;
+      }
+      @include media-query(large) {
+         font-size: 24px;
+      }
+   }
 }

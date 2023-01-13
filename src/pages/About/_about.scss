@@ -3,18 +3,14 @@
    display: flex;
    flex-grow: 1;
    flex-direction: column;
-   row-gap: 15px;
+   row-gap: 32px;
 }
 .dropdowns {
-   margin: 0 5%;
-}
-.banner {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
    @include media-query(small) {
-   }
-
-   @include media-query(medium) {
-   }
-
-   @include media-query(large) {
+      margin: 0 5%;
    }
 }
+

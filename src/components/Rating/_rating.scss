@@ -1,3 +1,11 @@
-.star {
-   height: 15px;
+.rate-comp {
+   .star {
+      height: 18px;
+      @include media-query(medium) {
+         height: 25px;
+      }
+      @include media-query(large) {
+         height: 30px;
+      }
+   }
 }

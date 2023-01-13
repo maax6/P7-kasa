@@ -11,14 +11,14 @@ export default function Rating({ score }) {
                   key={level.toString()}
                   className="star"
                   src={fullStar}
-                  alt="rating star"
+                  alt="star filled"
                />
             ) : (
                <img
                   key={level.toString()}
-                  className="star"
+                  className=" star starEmpty"
                   src={emptyStar}
-                  alt="rating star"
+                  alt="star empty"
                />
             )
          )}

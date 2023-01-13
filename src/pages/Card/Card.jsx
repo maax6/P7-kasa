@@ -19,23 +19,29 @@ export default function Card() {
    return (
       <div className="card">
          <Carousel pictures={pictures} />
-         <h1 className="card__title">{selectedItem.title} </h1>
-         <h2 className="card__location">{selectedItem.location}</h2>
-         <div className="card__tags">
-            {selectedItem.tags.map((tag, index) => (
-               <Tags key={index} getTag={tag} />
-            ))}
+         <div className="details">
+            <div className="prod">
+               <h1 className="prod__title">{selectedItem.title} </h1>
+               <h2 className="prod__location">{selectedItem.location}</h2>
+               <div className="prod__tags">
+                  {selectedItem.tags.map((tag, index) => (
+                     <Tags key={index} getTag={tag} />
+                  ))}
+               </div>
+            </div>
+            <div className="provider">
+               <Rating score={selectedItem.rating} />
+               <Owner host={selectedItem.host} />
+            </div>
          </div>
-         <div className="provider">
-            <Rating score={selectedItem.rating} />
-            <Owner host={selectedItem.host} />
+         <div className="drops">
+            <Dropdown
+               key={selectedItem.id}
+               title="Description"
+               description={selectedItem.description}
+            />
+            <Dropdown title="Équipements" equipments={selectedItem.equipments} />
          </div>
-         <Dropdown
-            key={selectedItem.id}
-            title="Description"
-            description={selectedItem.description}
-         />
-         <Dropdown title="Équiments" equipments={selectedItem.equipments} />
       </div>
    )
 }
