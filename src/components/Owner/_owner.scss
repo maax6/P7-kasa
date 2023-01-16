@@ -1,32 +1,32 @@
 .owner {
-	font-weight: 500;
+   font-weight: 500;
    display: flex;
    flex-direction: row;
    gap: 10px;
    justify-content: flex-end;
    align-items: center;
    &__name {
-	line-height: 17px;
+      line-height: 17px;
       font-size: 12px;
-	  @include media-query(medium) {
-		font-size: 16px;
-		line-height: 25px;
-	}
-	  @include media-query(large) {
-		font-size: 18px;
-	}
+      @include media-query(medium) {
+         font-size: 16px;
+         line-height: 25px;
+      }
+      @include media-query(large) {
+         font-size: 18px;
+      }
    }
    &__picture {
       height: 32px;
       width: 32px;
       border-radius: 100px;
-	  @include media-query(medium) {
-		  height: 46px;
-		  width: 46px;
-	}
-	  @include media-query(large) {
-		  height: 64px;
-		  width: 64px;
-	}
+      @include media-query(medium) {
+         height: 46px;
+         width: 46px;
+      }
+      @include media-query(large) {
+         height: 64px;
+         width: 64px;
+      }
    }
 }

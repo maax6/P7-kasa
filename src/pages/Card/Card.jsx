@@ -40,7 +40,10 @@ export default function Card() {
                title="Description"
                description={selectedItem.description}
             />
-            <Dropdown title="Équipements" equipments={selectedItem.equipments} />
+            <Dropdown
+               title="Équipements"
+               equipments={selectedItem.equipments}
+            />
          </div>
       </div>
    )

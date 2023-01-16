@@ -81,7 +81,7 @@
       @include media-query(large) {
          flex-direction: row;
          justify-content: space-between;
-		 column-gap: 76px;
+         column-gap: 76px;
          .dropdown {
             width: 100%;
          }

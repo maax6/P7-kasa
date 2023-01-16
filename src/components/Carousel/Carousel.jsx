@@ -30,7 +30,7 @@ export default function Carousel({ pictures }) {
                >
                   <FiChevronLeft />
                </button>
-               <span className='carousel__index'>
+               <span className="carousel__index">
                   {currentIndex + 1}/{pictures.length}
                </span>
                <button
@@ -45,3 +45,4 @@ export default function Carousel({ pictures }) {
       </div>
    )
 }
+
