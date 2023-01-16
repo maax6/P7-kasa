@@ -9,7 +9,11 @@
    height: 209px;
    width: 100%;
    color: $white;
-   margin-top: 100px;
+   margin-top: 50px;
+   @include media-query(medium) {
+      margin-top: 100px;
+   }
+
    &__logo {
       filter: brightness(10);
       height: 40px;

@@ -4,7 +4,7 @@
    flex-direction: row;
    justify-content: space-between;
    align-items: flex-end;
-   height: 47px;
+   height: 43px;
    font-size: 12px;
    @include media-query(small) {
       height: 54px;
@@ -39,6 +39,7 @@
       text-align: right;
       line-height: 34px;
       color: #ff6060;
+      font-weight: 500;
       align-items: flex-end;
       @include max-media-query(small) {
          text-transform: uppercase;
