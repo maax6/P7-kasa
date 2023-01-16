@@ -1,10 +1,10 @@
 //Sass base
-@import '01_base/_reset.scss';
-@import '01_base/_base.scss';
+@import '_base/_reset.scss';
+@import '_base/_base.scss';
 //Scss Variables
-@import '02_utils/_keyframes.scss';
-@import '02_utils/_mixins.scss';
-@import '02_utils/_variables.scss';
+@import '_utils/_keyframes.scss';
+@import '_utils/_mixins.scss';
+@import '_utils/_variables.scss';
 //Components
 @import '../components/Header/_header.scss';
 @import '../components/Footer/_footer.scss';
