@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom'
 import products from '../../assets/templates/products.json'
-import Error from '../Error/Error'
+import { Navigate } from "react-router-dom";
 import Rating from '../../components/Rating/Rating'
 import Owner from '../../components/Owner/Owner'
 import Dropdown from '../../components/Dropdown/Dropdown'
@@ -13,7 +13,7 @@ export default function Card() {
    const selectedItem = parsedList.find((item) => item.id === id)
 
    if (!selectedItem) {
-      return <Error />
+      return <Navigate replace to="/404" />
    }
    const pictures = selectedItem.pictures
    return (
