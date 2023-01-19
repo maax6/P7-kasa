@@ -22,7 +22,19 @@
    }
    &__text {
       color: $white;
-      padding: 16px 100px 31px 16px;
+      padding: 16px 140px 16px 16px;
+      font-weight: 500;
+      font-size: 20px;
+      @include media-query(small) {
+		padding: 16px 100px 16px 16px;
+
+      }
+      @include media-query(medium) {
+         font-size: 30px;
+      }
+      @include media-query(large) {
+         font-size: 36px;
+      }
       @include media-query(small) {
          padding: 10px;
       }

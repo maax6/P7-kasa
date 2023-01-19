@@ -33,8 +33,19 @@
       font-size: 288px;
    }
 }
-h1 {
+.notFound {
    font-weight: 500;
+   line-height: 28px;
+   padding: 35px;
+   font-size: 18px;
+   @include media-query(medium) {
+      font-size: 25px;
+      padding: 30px;
+   }
+   @include media-query(large) {
+      font-size: 36px;
+      padding: 40px;
+   }
 }
 
 .return {

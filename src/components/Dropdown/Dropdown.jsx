@@ -12,7 +12,7 @@ export default function Dropdown(props) {
             className="dropdown__button"
             onClick={() => setIsOpen(!isOpen)}
          >
-            <h1 className="dropdown__button__title">{props.title}</h1>
+            <h3 className="dropdown__button__title">{props.title}</h3>
             <span className="dropdown__button__chevron">
                {isOpen ? <FiChevronUp /> : <FiChevronDown />}
             </span>

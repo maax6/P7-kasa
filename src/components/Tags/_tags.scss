@@ -1,5 +1,5 @@
 .tag {
-   height: 18px;
+   height: 21px;
    width: fit-content;
    background-color: $primary;
    border-radius: 5px;
@@ -7,7 +7,7 @@
    justify-content: center;
    align-items: center;
    @include media-query(medium) {
-      height: 20px;
+      height: 25px;
       border-radius: 8px;
    }
    @include media-query(large) {
@@ -15,7 +15,8 @@
       border-radius: 10px;
    }
    &__text {
-      font-size: 10px;
+      font-size: 11px;
+	  font-weight: 500;
       color: white;
       margin: 0 5px;
       padding: 4px;
@@ -26,7 +27,7 @@
          font-size: 14px;
       }
       @include media-query(large) {
-         font-size: 16px;
+         font-size: 15px;
       }
    }
 }

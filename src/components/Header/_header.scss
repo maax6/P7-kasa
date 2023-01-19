@@ -5,7 +5,7 @@
    justify-content: space-between;
    align-items: flex-end;
    height: 43px;
-   font-size: 12px;
+   font-size: 11px;
    @include media-query(small) {
       height: 54px;
       font-size: 18px;
@@ -21,7 +21,10 @@
    }
 }
 .logo {
-   height: 100%;
+   height: 90%;
+   @include media-query(small) {
+      height: 100%;
+   }
    &__container {
       height: 100%;
    }
@@ -35,7 +38,7 @@
       justify-content: flex-end;
    }
    &__link {
-      margin-left: 20px;
+      margin-left: 22px;
       text-align: right;
       line-height: 34px;
       color: #ff6060;
@@ -43,6 +46,12 @@
       align-items: flex-end;
       @include max-media-query(small) {
          text-transform: uppercase;
+      }
+      @include media-query(medium) {
+         margin-left: 40px;
+      }
+      @include media-query(large) {
+         margin-left: 57px;
       }
       &--active {
          text-decoration: underline;
