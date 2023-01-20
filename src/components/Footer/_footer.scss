@@ -10,6 +10,8 @@
    width: 100%;
    color: $white;
    margin-top: 50px;
+   position: absolute;
+   bottom: 0;
    @include media-query(medium) {
       margin-top: 100px;
    }
