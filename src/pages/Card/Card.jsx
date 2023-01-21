@@ -6,6 +6,7 @@ import Owner from '../../components/Owner/Owner'
 import Dropdown from '../../components/Dropdown/Dropdown'
 import Tags from '../../components/Tags/Tags'
 import Carousel from '../../components/Carousel/Carousel'
+
 export default function Card() {
    const list = JSON.stringify(products)
    const { id } = useParams()
